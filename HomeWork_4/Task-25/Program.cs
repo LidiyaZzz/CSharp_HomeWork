@@ -44,7 +44,7 @@ int numberPower(int num, int pow)
 }
 Console.WriteLine($"Результат выполнения возведения в степень по первому варианту решения: {numberPower(number, valuePower)}");
 
-// Вариант 2: через цикл как то неудобно, функцией Math.Pow проще, или?
+// Вариант 2:
 
 int ResultPower(int num, int power)
 {
