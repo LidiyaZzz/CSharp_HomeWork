@@ -8,9 +8,11 @@
 int[] GetRandomNumberArray(int lengthArray, int leftBound, int rightBound)
 {
   int[] numberArray = new int[lengthArray];
+  Random random = new Random();
+
   for (int i = 0; i < numberArray.Length; i++)
   {
-    numberArray[i] = new Random().Next(leftBound, rightBound);
+    numberArray[i] = random.Next(leftBound, rightBound);
   }
 
   return numberArray;

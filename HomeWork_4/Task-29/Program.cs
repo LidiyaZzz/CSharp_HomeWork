@@ -9,9 +9,10 @@ int[] numberArray = new int[8];
 
 void GetRandomNumberArray(int leftBound, int rightBound, int[] array)
 {
+  Random random = new Random();
   for (int i = 0; i < array.Length; i++)
   {
-    array[i] = new Random().Next(leftBound, rightBound);
+    array[i] = random.Next(leftBound, rightBound);
   }
 }
 

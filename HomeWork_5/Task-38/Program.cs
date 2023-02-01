@@ -6,8 +6,8 @@
 
 double GetRandomNumber()
 {
-  Random randomPartOfNumber = new Random();
-  double randomNumber = Math.Round(randomPartOfNumber.NextDouble(), 2) + randomPartOfNumber.Next(-99, 100);
+  Random random = new Random();
+  double randomNumber = Math.Round(random.NextDouble(), 2) + random.Next(-99, 100);
 
   return randomNumber;
 }
