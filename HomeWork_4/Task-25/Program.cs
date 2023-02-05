@@ -5,6 +5,12 @@
     2, 4 -> 16
 */
 
+int number = GetValue("Введите целое число:");
+int valuePower = Math.Abs(GetValue("Введите степень, в которую необходимо возвести число:"));
+Console.WriteLine($"Результат выполнения возведения в степень по первому варианту решения: {numberPower(number, valuePower)}");
+Console.WriteLine($"Результат выполнения возведения в степень по второму варианту решения: {ResultPower(number, valuePower)}");
+
+
 int GetValue(string message)
 {
   int resultNumber = 0;
@@ -24,10 +30,6 @@ int GetValue(string message)
   return resultNumber;
 }
 
-int number = GetValue("Введите целое число:");
-int valuePower = Math.Abs(GetValue("Введите степень, в которую необходимо возвести число:"));
-
-
 // Вариант 1 через цикл
 int numberPower(int num, int pow)
 {
@@ -42,10 +44,8 @@ int numberPower(int num, int pow)
   }
   return result;
 }
-Console.WriteLine($"Результат выполнения возведения в степень по первому варианту решения: {numberPower(number, valuePower)}");
 
 // Вариант 2:
-
 int ResultPower(int num, int power)
 {
   int result;
@@ -53,4 +53,3 @@ int ResultPower(int num, int power)
   else result = Convert.ToInt32(Math.Pow(num, power));
   return result;
 }
-Console.WriteLine($"Результат выполнения возведения в степень по второму варианту решения: {ResultPower(number, valuePower)}");

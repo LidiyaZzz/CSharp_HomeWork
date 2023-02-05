@@ -5,6 +5,14 @@
     [-4, -6, 89, 6] -> 0
 */
 
+
+int[] numberArray = GetRandomNumberArray(4, -99, 100);
+
+Console.Write("В произвольном массиве ");
+PrintNumberArray(numberArray);
+Console.WriteLine($" сумма элементов, стоящих на нечётных позициях = {GetSumElementsAtOddPositions(numberArray)}");
+
+
 int[] GetRandomNumberArray(int lengthArray, int leftBound, int rightBound)
 {
   int[] numberArray = new int[lengthArray];
@@ -40,9 +48,3 @@ int GetSumElementsAtOddPositions(int[] array)
   }
   return sum;
 }
-
-int[] numberArray = GetRandomNumberArray(4, -99, 100);
-
-Console.Write("В произвольном массиве ");
-PrintNumberArray(numberArray);
-Console.WriteLine($" сумма элементов, стоящих на нечётных позициях = {GetSumElementsAtOddPositions(numberArray)}");

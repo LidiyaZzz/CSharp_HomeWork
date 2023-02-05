@@ -9,13 +9,6 @@
 Console.WriteLine("Введите целое число:");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int GetThirdDigitOfNumber(int num)
-{
-  num = num - (num % 100);
-  int result = Math.Abs((num % 1000) / 100);
-  return result;
-}
-
 if (number < 100 && number > -100)
 {
   Console.WriteLine($"Вы ввели {number}, у данного числа третьей цифры нет");
@@ -23,4 +16,12 @@ if (number < 100 && number > -100)
 else if (number >= 100 || number <= -100)
 {
   Console.WriteLine($"Вы ввели {number}, у данного числа третья цифра {GetThirdDigitOfNumber(number)}");
+}
+
+
+int GetThirdDigitOfNumber(int num)
+{
+  num = num - (num % 100);
+  int result = Math.Abs((num % 1000) / 100);
+  return result;
 }

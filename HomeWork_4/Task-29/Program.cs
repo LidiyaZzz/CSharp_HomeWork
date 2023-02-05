@@ -6,6 +6,9 @@
 */
 
 int[] numberArray = new int[8];
+GetRandomNumberArray(1, 100, numberArray);
+PrintNumberArray(numberArray);
+
 
 void GetRandomNumberArray(int leftBound, int rightBound, int[] array)
 {
@@ -26,9 +29,6 @@ void PrintNumberArray(int[] array)
   }
   Console.Write($"]");
 }
-
-GetRandomNumberArray(1, 100, numberArray);
-PrintNumberArray(numberArray);
 
 
 

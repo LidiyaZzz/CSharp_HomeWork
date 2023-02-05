@@ -6,6 +6,10 @@
     23432 -> да
 */
 
+int number = GetValue("Введите целое пятизначное число:");
+GetResult(number);
+
+
 int GetValue(string message)
 {
   int resultNumber = 0;
@@ -31,8 +35,6 @@ int GetValue(string message)
   return resultNumber;
 }
 
-int number = GetValue("Введите целое пятизначное число:");
-
 void GetResult(int num)
 {
   if (
@@ -48,7 +50,6 @@ void GetResult(int num)
   }
 }
 
-GetResult(number);
 
 
 

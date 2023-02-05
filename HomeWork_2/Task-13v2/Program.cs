@@ -8,6 +8,8 @@
 
 Console.WriteLine("Введите целое число:");
 int number = Convert.ToInt32(Console.ReadLine());
+int[] arrayOfNumber = GetArrayDidgital(number);
+GetThirdDigit(arrayOfNumber);
 
 int[] GetArrayDidgital(int num)
 {
@@ -33,7 +35,6 @@ void GetThirdDigit(int[] numArray)
   }
 }
 
-int[] arrayOfNumber = GetArrayDidgital(number);
-GetThirdDigit(arrayOfNumber);
+
 
 

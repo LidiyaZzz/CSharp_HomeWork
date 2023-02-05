@@ -11,6 +11,10 @@
    
 */
 
+int[] numberArray = new int[GetRandomLengthArray(1, 9)];
+GetRandomNumberArray(1, 100, numberArray);
+PrintNumberArray(numberArray);
+
 int GetRandomLengthArray(int leftBound, int rightBound)
 {
   int length = new Random().Next(leftBound, rightBound);
@@ -36,7 +40,3 @@ void PrintNumberArray(int[] array)
   }
   Console.Write($"]");
 }
-
-int[] numberArray = new int[GetRandomLengthArray(1, 9)];
-GetRandomNumberArray(1, 100, numberArray);
-PrintNumberArray(numberArray);

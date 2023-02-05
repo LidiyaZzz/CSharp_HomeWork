@@ -4,6 +4,12 @@
     [345, 897, 568, 234] -> 2
 */
 
+int[] numberArray = GetRandomNumberArray(5, 100, 1000);
+Console.Write("В произвольном массиве ");
+PrintNumberArray(numberArray);
+Console.WriteLine($" количество четных элементов {GetQuantityEvenNumbers(numberArray)}");
+
+
 int[] GetRandomNumberArray(int lengthArray, int leftBound, int rightBound)
 {
   int[] numberArray = new int[lengthArray];
@@ -38,9 +44,3 @@ int GetQuantityEvenNumbers(int[] array)
   }
   return count;
 }
-
-int[] numberArray = GetRandomNumberArray(5, 100, 1000);
-
-Console.Write("В произвольном массиве ");
-PrintNumberArray(numberArray);
-Console.WriteLine($" количество четных элементов {GetQuantityEvenNumbers(numberArray)}");

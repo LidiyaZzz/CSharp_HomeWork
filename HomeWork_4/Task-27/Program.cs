@@ -6,6 +6,10 @@
     9012 -> 12
 */
 
+int number = GetValue("Введите целое число: ");
+Console.WriteLine($"сумма цифр числа {number}: {SumDigitOfNum(CountDigit(number), number)}");
+
+
 int GetValue(string message)
 {
   int resultNumber = 0;
@@ -48,7 +52,5 @@ int SumDigitOfNum(int count, int num)
   return result;
 }
 
-int number = GetValue("Введите целое число: ");
-Console.WriteLine($"сумма цифр числа {number}: {SumDigitOfNum(CountDigit(number), number)}");
 
 

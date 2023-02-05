@@ -4,6 +4,12 @@
     [3 7 22 2 78] -> 76
 */
 
+double[] numberArray = GetRandomNumberArray(4);
+Console.Write("В произвольном массиве вещественных чисел ");
+PrintNumberArray(numberArray);
+Console.WriteLine($" разница между максимальным и минимальным элементами массива = {GetDiffMaxAndMinElements(numberArray)}");
+
+
 double GetRandomNumber()
 {
   Random random = new Random();
@@ -49,10 +55,5 @@ double GetDiffMaxAndMinElements(double[] array)
   return Math.Round((maxElem - minElem), 2);
 }
 
-double[] numberArray = GetRandomNumberArray(4);
-
-Console.Write("В произвольном массиве вещественных чисел ");
-PrintNumberArray(numberArray);
-Console.WriteLine($" разница между максимальным и минимальным элементами массива = {GetDiffMaxAndMinElements(numberArray)}");
 
 

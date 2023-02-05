@@ -6,6 +6,9 @@
     5 -> 1, 8, 27, 64, 125
 */
 
+int finishNumber = GetNumber("Введите целое число");
+GetListCubs(finishNumber);
+
 int GetNumber(string message)
 {
   int resultNumber = 0;
@@ -43,6 +46,3 @@ void GetListCubs(int value)
     }
   }
 }
-
-int finishNumber = GetNumber("Введите целое число");
-GetListCubs(finishNumber);

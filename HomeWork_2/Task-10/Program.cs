@@ -20,6 +20,9 @@
 
 Console.WriteLine("Введите целое трехзначное число");
 int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"целое трехзначное число: {num}");
+Console.WriteLine($"вторая цифра этого числа: {GetSecondDigitOfNumber(num)}");
+
 
 int GetSecondDigitOfNumber(int number)
 {
@@ -27,5 +30,3 @@ int GetSecondDigitOfNumber(int number)
   return result;
 }
 
-Console.WriteLine($"целое трехзначное число: {num}");
-Console.WriteLine($"вторая цифра этого числа: {GetSecondDigitOfNumber(num)}");

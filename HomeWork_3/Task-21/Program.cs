@@ -6,6 +6,17 @@
     A (7,-5, 0); B (1,-1,9) -> 11.53
 */
 
+int xA = GetNumber("Введите координату X точки A:");
+int yA = GetNumber("Введите координату Y точки A:");
+int zA = GetNumber("Введите координату Z точки A:");
+
+int xB = GetNumber("Введите координату X точки B:");
+int yB = GetNumber("Введите координату Y точки B:");
+int zB = GetNumber("Введите координату Z точки B:");
+
+Console.WriteLine(GetCoordinates(xA, yA, zA, xB, yB, zB));
+
+
 int GetNumber(string message)
 {
   int resultNumber = 0;
@@ -31,13 +42,4 @@ double GetCoordinates(int xA, int yA, int zA, int xB, int yB, int zB)
   return result;
 }
 
-int xA = GetNumber("Введите координату X точки A:");
-int yA = GetNumber("Введите координату Y точки A:");
-int zA = GetNumber("Введите координату Z точки A:");
-
-int xB = GetNumber("Введите координату X точки B:");
-int yB = GetNumber("Введите координату Y точки B:");
-int zB = GetNumber("Введите координату Z точки B:");
-
-Console.WriteLine(GetCoordinates(xA, yA, zA, xB, yB, zB));
 
