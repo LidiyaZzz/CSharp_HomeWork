@@ -10,7 +10,7 @@
 */
 
 // Часть-заглушка - создаем рандомный заполненный массив
-int[,] matrixRandomArray = FillRandomNumber(GetTwoDimensional(4, 5));
+int[,] matrixRandomArray = GetTwoDimensional(4, 5);
 Console.WriteLine("Зададим двумерный массив");
 PrintArray(matrixRandomArray);
 Console.WriteLine();
@@ -83,11 +83,6 @@ int GetElementByPosition(int[,] array, int[] position)
 int[,] GetTwoDimensional(int oneValue, int twoValue)
 {
   int[,] matrix = new int[oneValue, twoValue];
-  return matrix;
-}
-
-int[,] FillRandomNumber(int[,] matrix)
-{
   Random random = new Random();
 
   for (int i = 0; i < matrix.GetLength(0); i++)

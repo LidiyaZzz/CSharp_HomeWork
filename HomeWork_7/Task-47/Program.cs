@@ -7,22 +7,38 @@
     8 7,8 -7,1 9
 */
 
-double[,] myArray = GetTwoDimensional(3, 4);
-FillRandomNumber(myArray);
+int rows = GetNumber("Введите количество строк");
+int columns = GetNumber("Введите количество столбцов");
+double[,] myArray = GetTwoDimensional(rows, columns);
 Console.WriteLine(
   $"Зададим двумерный массив размером {myArray.GetLength(0)}х{myArray.GetLength(1)}, заполненный случайными вещественными числами: "
   );
 PrintArray(myArray);
 
 
+int GetNumber(string message)
+{
+  int resultNumber = 0;
+  while (true)
+  {
+    Console.WriteLine(message);
+
+    if (int.TryParse(Console.ReadLine(), out resultNumber))
+    {
+      break;
+    }
+    else
+    {
+      Console.WriteLine("Вы ввели не корректные данные. Повторите ввод!");
+    }
+  }
+  return Math.Abs(resultNumber);
+}
+
 double[,] GetTwoDimensional(int oneValue, int twoValue)
 {
   double[,] matrix = new double[oneValue, twoValue];
-  return matrix;
-}
 
-double[,] FillRandomNumber(double[,] matrix)
-{
   Random random = new Random();
 
   for (int i = 0; i < matrix.GetLength(0); i++)
